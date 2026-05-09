@@ -1,65 +1,101 @@
-import Image from "next/image";
-
 export default function Home() {
+  const projects = [
+    {
+      title: "ESP32-CAM Rover",
+      description:
+        "WiFi-controlled rover with live camera streaming and remote controls.",
+      tech: ["ESP32", "Arduino", "C++"],
+    },
+    {
+      title: "3D Printer Mods",
+      description:
+        "Repair logs, calibration work, and hardware upgrades for budget printers.",
+      tech: ["Slicers", "CAD", "3D Printing"],
+    },
+    {
+      title: "Robot Arm",
+      description:
+        "Arduino-based servo robot arm designed for learning inverse kinematics.",
+      tech: ["Arduino", "SG90", "CAD"],
+    },
+  ];
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="min-h-screen bg-black text-white">
+      {/* Container */}
+      <div className="mx-auto flex max-w-5xl flex-col px-6 py-20">
+        
+        {/* Hero */}
+        <section className="mb-24">
+          <p className="mb-3 text-sm text-zinc-500">
+            LIGHTPULP / PORTFOLIO
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+
+          <h1 className="mb-6 max-w-3xl text-5xl font-bold tracking-tight">
+            I build hardware, software, and weird side projects.
+          </h1>
+
+          <p className="max-w-2xl text-lg leading-8 text-zinc-400">
+            Robotics, ESP32 projects, 3D printing, embedded systems, and web
+            development.
+          </p>
+
+          <div className="mt-8 flex gap-4">
+            <a
+              href="#projects"
+              className="rounded-xl bg-white px-5 py-3 text-sm font-medium text-black transition hover:opacity-80"
+            >
+              View Projects
+            </a>
+
+            <a
+              href="https://github.com/"
+              target="_blank"
+              className="rounded-xl border border-zinc-800 px-5 py-3 text-sm text-zinc-300 transition hover:border-zinc-600"
+            >
+              GitHub
+            </a>
+          </div>
+        </section>
+
+        {/* Projects */}
+        <section id="projects" className="mb-24">
+          <h2 className="mb-8 text-2xl font-semibold">Projects</h2>
+
+          <div className="grid gap-6 md:grid-cols-2">
+            {projects.map((project) => (
+              <div
+                key={project.title}
+                className="rounded-2xl border border-zinc-800 bg-zinc-950 p-6 transition hover:border-zinc-700"
+              >
+                <h3 className="mb-3 text-xl font-semibold">
+                  {project.title}
+                </h3>
+
+                <p className="mb-5 text-sm leading-7 text-zinc-400">
+                  {project.description}
+                </p>
+
+                <div className="flex flex-wrap gap-2">
+                  {project.tech.map((item) => (
+                    <span
+                      key={item}
+                      className="rounded-lg border border-zinc-700 px-3 py-1 text-xs text-zinc-300"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Footer */}
+        <footer className="border-t border-zinc-900 pt-6 text-sm text-zinc-500">
+          © 2026 YOUR HANDLE
+        </footer>
+      </div>
+    </main>
   );
 }
