@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hi, I'm lightpulp
 
-## Getting Started
+## RonBrianRodriguez
 
-First, run the development server:
+I'm a 2nd year student who builds Mobile Apps & Embedded Systems. <br>
+I like building things
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## My Tech Toolbox
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Languages:** Java, C#, JavaScript, PHP
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Frameworks:** Next.js, Laravel, 
 
-## Learn More
+**Databases:** MariaDB, Firebase
 
-To learn more about Next.js, take a look at the following resources:
+**Others:** Arduino, ESP32, OrangePi, Raspberry pis
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Featured Projects
 
-## Deploy on Vercel
+### [CurSurf](your-repo-link)
+Wireless controller, keyboard & mouse for PC using mobile
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`Java` `C#` `Android`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### [RFID Attendance & Payroll System](your-repo-link)
+Automated time tracking and salary computation with RFID authentication
+
+`OrangePi` `MariaDB` `LAMP` `RFID` `JavaScript`
+
+---
+
+## My Certifications
+
+- [CCNA: Switching, Routing, and Wireless Essentials](https://www.credly.com/badges/4a539669-4491-41c1-aa81-d5013ed7e9cf/linked_in?t=tce4bj)
+- [CCNA: Introduction to Networks](https://www.credly.com/badges/ead5a4ab-5d60-41e9-a8cd-a4f9cd58ccb2/linked_in?t=t08mhl)
+
+---
+
+## Let's Connect
+
+- [LinkedIn](https://www.linkedin.com/in/ron-rodriguez-239255271)
+- [Email](rbrian1105@gmail.com)

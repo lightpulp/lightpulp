@@ -1,10 +1,13 @@
+import Link from 'next/link';
+
 export default function Home() {
   const projects = [
     {
       title: "CurSurf",
       description:
-        "Wireless Controller, Keyboard & Mouse for PC using mobile.",
+        "Java android application for wireless control of desktop computer using network communication, enabling mouse, keyboard, and game controller functionality.",
       tech: ["Java", "C#", "Android"],
+      externalLink: "https://cursurf-website.vercel.app/",
     },
 
     {
@@ -12,6 +15,7 @@ export default function Home() {
         description:
           "Web-based employee attendance and payroll system using RFID authentication with automated time tracking and salary computation.",
         tech: ["OrangePi", "MariaDB", "LAMP", "RFID", "JavaScript"],
+        externalLink: "https://rfid-attendance-system.vercel.app/",
     },
   ];
 
@@ -44,7 +48,7 @@ export default function Home() {
             </a>
 
             <a
-              href="https://github.com/"
+              href="https://github.com/lightpulp"
               target="_blank"
               className="rounded-xl border border-zinc-800 px-5 py-3 text-sm text-zinc-300 transition hover:border-zinc-600"
             >
@@ -71,7 +75,7 @@ export default function Home() {
                   {project.description}
                 </p>
 
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-5">
                   {project.tech.map((item) => (
                     <span
                       key={item}
@@ -81,10 +85,24 @@ export default function Home() {
                     </span>
                   ))}
                 </div>
+
+                <div className="mt-6">
+                  {project.externalLink && (
+                    <a
+                      href={project.externalLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block rounded-lg bg-zinc-800 px-6 py-2.5 text-sm font-medium text-zinc-200 transition hover:bg-zinc-700 hover:scale-105"                    >
+                      View Project →
+                    </a>
+                  )}
+                </div>
               </div>
             ))}
           </div>
         </section>
+
+
 
         {/* Footer */}
         <footer className="border-t border-zinc-900 pt-6 text-sm text-zinc-500">
