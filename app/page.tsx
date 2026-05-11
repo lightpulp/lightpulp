@@ -1,22 +1,17 @@
 export default function Home() {
   const projects = [
     {
-      title: "ESP32-CAM Rover",
+      title: "CurSurf",
       description:
-        "WiFi-controlled rover with live camera streaming and remote controls.",
-      tech: ["ESP32", "Arduino", "C++"],
+        "Wireless Controller, Keyboard & Mouse for PC using mobile.",
+      tech: ["Java", "C#", "Android"],
     },
+
     {
-      title: "3D Printer Mods",
-      description:
-        "Repair logs, calibration work, and hardware upgrades for budget printers.",
-      tech: ["Slicers", "CAD", "3D Printing"],
-    },
-    {
-      title: "Robot Arm",
-      description:
-        "Arduino-based servo robot arm designed for learning inverse kinematics.",
-      tech: ["Arduino", "SG90", "CAD"],
+        title: "RFID Attendance & Payroll Management System",
+        description:
+          "Web-based employee attendance and payroll system using RFID authentication with automated time tracking and salary computation.",
+        tech: ["OrangePi", "MariaDB", "LAMP", "RFID", "JavaScript"],
     },
   ];
 
@@ -36,7 +31,7 @@ export default function Home() {
           </h1>
 
           <p className="max-w-2xl text-lg leading-8 text-zinc-400">
-            Robotics, ESP32 projects, 3D printing, embedded systems, and web
+            Java Dev, Robotics, ESP32 projects, 3D printing, embedded systems, and web
             development.
           </p>
 
@@ -93,7 +88,7 @@ export default function Home() {
 
         {/* Footer */}
         <footer className="border-t border-zinc-900 pt-6 text-sm text-zinc-500">
-          © 2026 YOUR HANDLE
+          © 2026 Lightpulp. All rights reserved.
         </footer>
       </div>
     </main>
