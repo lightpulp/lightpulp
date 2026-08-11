@@ -17,6 +17,16 @@ export default function Home() {
         tech: ["OrangePi", "MariaDB", "LAMP", "RFID", "JavaScript"],
         externalLink: "https://rfid-attendance-system.vercel.app/",
     },
+
+      {
+        title: "Survivalist Cyberdeck",
+        description:
+          "All around computer for survival situations.",
+        tech: ["OrangePi", "MariaDB", "LAMP", "esp32", "JavaScript"],
+        externalLink: "https://rfid-attendance-system.vercel.app/",
+    },
+
+    
   ];
 
   return (
