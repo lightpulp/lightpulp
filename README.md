@@ -2,7 +2,7 @@
 
 ## RonBrianRodriguez
 
-I'm a 2nd year student who builds Mobile Apps & Embedded Systems. <br>
+I'm a 3rd year student who builds Mobile Apps & Embedded Systems. <br>
 I like building things
 
 
